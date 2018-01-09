@@ -1,0 +1,9 @@
+$column_layout: 2; 
+.column { 
+	@if $column_layout == 2 { 
+		width: 50%; 
+		float: left; 
+	} @else { 
+		width: 100%; 
+	} 
+}

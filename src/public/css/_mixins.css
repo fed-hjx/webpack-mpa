@@ -1,0 +1,25 @@
+@define-mixin icon $network, $color { 
+	.button.$(network) { 
+		background-image: url("`img/$(network).png`"); 
+		background-color: $color; 
+	} 
+} 
+@mixin icon twitter, blue; 
+
+@mixin icon youtube, red;
+
+@define-mixin icon2 $network, $color { 
+	.button.$(network) { 
+		background-image: url("`img/$(network).png`"); 
+		background-color: $color; 
+		@mixin-content;
+	} 
+} 
+@mixin icon2 twitter, blue{
+	width: 200px;
+	display: flex;
+}; 
+
+@mixin icon2 youtube, red{
+	width: 100px;
+};

@@ -1,0 +1,14 @@
+ @import "_variables.css"; 
+@import "_utilities.css"; 
+@import "_mixins.css"; 
+@import "_extends.css";  
+
+@for $i from 12 to 30 { 
+	.fs$(i) { font-size: $(i)px; }
+};
+$social: twitter, facebook, youtube; 
+@each $icon in ($social){
+	.icon-$(icon) { 
+		background: url("`img/$(icon).png`"); 
+	};
+};

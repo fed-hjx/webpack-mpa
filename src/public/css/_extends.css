@@ -1,0 +1,22 @@
+@define-extend rounded_button { 
+	border-radius: 0.5rem;
+	padding: 1em; 
+	border-width: 0.0625rem; 
+	border-style: solid; 
+}
+.blue_button { 
+	@extend rounded_button; 
+	border-color: #2F74D1; 
+	background-color: #3B8EFF; 
+} 
+@define-extend rounded_button_two { 
+	border-radius: 0.5rem;
+	padding: 1em; 
+	border-width: 0.0625rem; 
+	border-style: solid; 
+}
+.red_button { 
+	@extend rounded_button_two; 
+	border-color: #C41A1E; 
+	background-color: #FF2025; 
+}
