@@ -1,1 +1,2 @@
-# webpack3.0_normal
+# webpack3.0
+test mobx in mpa
